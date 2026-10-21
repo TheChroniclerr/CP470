@@ -6,6 +6,12 @@
     <string name="login_txt">login</string>
     <string name="login_hint_field">login name</string>
     <string name="password_txt">password</string>
+    <string name="login_btn_txt">Submit</string>
+
+    <string name="dialog_title">Finish Activity?</string>
+    <string name="dialog_message">Do you want to finish this activity?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 
     <string name="radio_btn_txt">RadioButton</string>
     <string name="check_box_txt">CheckBox</string>
