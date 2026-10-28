@@ -1,0 +1,68 @@
+@startuml
+class com.baox7248.androidassignments.MainActivity {
+- {static} String ACTIVITY_NAME
+# void onCreate(Bundle)
+# void onActivityResult(int,int,Intent)
++ void print(String)
+# void onResume()
+# void onStart()
+# void onPause()
+# void onStop()
+# void onDestroy()
+# void onSaveInstanceState(Bundle)
+# void onRestoreInstanceState(Bundle)
+}
+
+
+class com.baox7248.androidassignments.ListItemsActivity {
+- {static} String ACTIVITY_NAME
+- {static} int REQUEST_IMAGE_CAPTURE
+- ImageButton imageButton
+# void onCreate(Bundle)
+# void onActivityResult(int,int,Intent)
+# void onResume()
+# void onStart()
+# void onPause()
+# void onStop()
+# void onDestroy()
+# void onSaveInstanceState(Bundle)
+# void onRestoreInstanceState(Bundle)
+}
+
+
+class com.baox7248.androidassignments.ChatWindow {
+- ArrayList<String> chatMessages
+# void onCreate(Bundle)
+}
+
+
+class com.baox7248.androidassignments.ChatWindow$ChatAdapter {
++ int getCount()
++ String getItem(int)
++ View getView(int,View,ViewGroup)
+}
+
+class com.baox7248.androidassignments.LoginActivity {
+- {static} String ACTIVITY_NAME
+- {static} String PREF_NAME
+# void onCreate(Bundle)
++ void print(String)
+# void onResume()
+# void onStart()
+# void onPause()
+# void onStop()
+# void onDestroy()
+# void onSaveInstanceState(Bundle)
+# void onRestoreInstanceState(Bundle)
+}
+
+
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.baox7248.androidassignments.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.baox7248.androidassignments.ListItemsActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.baox7248.androidassignments.ChatWindow
+com.baox7248.androidassignments.ChatWindow +.. com.baox7248.androidassignments.ChatWindow$ChatAdapter
+com.baox7248.androidassignments.ArrayAdapter <|-- com.baox7248.androidassignments.ChatWindow$ChatAdapter
+androidx.appcompat.app.AppCompatActivity <|-- com.baox7248.androidassignments.LoginActivity
+@enduml

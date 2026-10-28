@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="2dp"
-    android:background="@color/gold"
     android:columnCount="2"
     android:rowCount="2"
     tools:context=".ListItemsActivity">

@@ -2,6 +2,7 @@
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="chat_btn_txt">Start Chat</string>
 
     <string name="login_txt">login</string>
     <string name="login_hint_field">login name</string>
@@ -17,4 +18,7 @@
     <string name="check_box_txt">CheckBox</string>
     <string name="switch_txt">What does this do?</string>
     <string name="image_btn_desc">Camera icon</string>
+
+    <string name="send_btn_txt">Send</string>
+    <string name="msg_hint_txt">Type a message...</string>
 </resources>

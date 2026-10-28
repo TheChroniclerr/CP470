@@ -15,3 +15,6 @@ public class ExampleUnitTest {
         assertEquals(4, 2 + 2);
     }
 }
+
+// There's nothing for me to test here, since all of my activity classes currently are UI-related.
+// I'll do most of my work in instrumental testing instead.

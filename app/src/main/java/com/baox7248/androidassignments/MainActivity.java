@@ -32,10 +32,18 @@ public class MainActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "onCreate() called");
 
         Button listItemsButton = findViewById(R.id.button);
+        Button chatButton = findViewById(R.id.chatButton);
 
         listItemsButton.setOnClickListener ( v -> {
             Intent intent = new Intent(MainActivity.this, ListItemsActivity.class);
             startActivityForResult(intent, 10); // deprecated
+        });
+
+        chatButton.setOnClickListener ( v -> {
+            Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+
+            Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+            startActivity(intent);
         });
     }
 

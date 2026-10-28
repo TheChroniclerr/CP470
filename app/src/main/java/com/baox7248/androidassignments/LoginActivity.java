@@ -34,9 +34,9 @@ public class LoginActivity extends AppCompatActivity {
 
         Log.i(ACTIVITY_NAME, "onCreate() called");
 
-        EditText emailEditText = findViewById(R.id.editTextText);
-        EditText passwordEditText = findViewById(R.id.editTextText2);
-        Button loginButton = findViewById(R.id.button2);
+        EditText emailEditText = findViewById(R.id.editLoginName);
+        EditText passwordEditText = findViewById(R.id.editLoginPassword);
+        Button loginButton = findViewById(R.id.loginButton);
 
         SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
         String savedEmail = sharedPreferences.getString("DefaultEmail", "email@domain.com");
